@@ -17,4 +17,7 @@ app.use("/api/inventory", inventoryRoutes);
 
 app.use("/api/analytics", analyticsRoutes);
 
+app.get("/", (req, res) => {
+  res.send("Aura Engine API Running Successfully");
+});
 export default app;
